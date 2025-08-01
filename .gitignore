@@ -124,6 +124,10 @@ dmypy.json
 .vscode/
 !.vscode/tasks.json
 
+# GitHub Workflows - keep these
+!.github/
+!.github/workflows/
+
 # macOS
 .DS_Store
 
@@ -137,3 +141,6 @@ PUBLISHING.md
 .pypirc
 *.token
 pypi-tokens.txt
+
+# Documentation - internal setup guides
+GITHUB_ACTIONS.md
