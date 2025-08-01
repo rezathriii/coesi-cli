@@ -37,7 +37,7 @@ class TestCLICommands:
     @patch('src.cli.validate_env', return_value=True)
     @patch('src.cli.DockerComposeManager')
     @patch('os.path.exists', return_value=True)
-    def test_dev_command_success(self, mock_exists, mock_manager, mock_validate_env, mock_check_docker):
+    def test_dev_command_success(self, mock_exists, mock_manager, mock_validate_env, mock_check_docker, mock_validate_ip):
         """Test successful dev command execution."""
         mock_manager_instance = MagicMock()
         mock_manager.return_value = mock_manager_instance
