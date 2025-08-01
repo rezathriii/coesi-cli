@@ -65,27 +65,35 @@ coesi --help
 ## Commands
 
 ### `coesi dev`
+
 Deploy development environment with localhost (no IP parameter allowed).
 
 ### `coesi prod [IP]`
+
 Deploy production environment with optional IP address. Uses default IP if not specified.
 
 ### `coesi restart [PROFILE]`
+
 Restart services without rebuilding (dev or prod).
 
 ### `coesi stop [PROFILE]`
+
 Stop services (dev, prod, or all).
 
 ### `coesi status [PROFILE]`
+
 Show service status (dev, prod, or all).
 
 ### `coesi logs [SERVICE]`
+
 View logs for specific service or all services.
 
 ### `coesi clean [PROFILE]`
+
 Remove containers and volumes (dev, prod, or all).
 
 ### `coesi ip [IP]`
+
 Change production IP in .env.prod file.
 
 ## Requirements
@@ -151,5 +159,6 @@ For issues and questions, please visit: https://github.com/rezathriii/coesi-cli/
 ## Author
 
 **Reza Taheri**
+
 - GitHub: [@rezathriii](https://github.com/rezathriii)
 - Email: taheri.reza94@gmail.com

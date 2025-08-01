@@ -1,3 +1,4 @@
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -130,3 +131,9 @@ dmypy.json
 *.swp
 *.swo
 *~
+
+# PyPI Publishing - HIDE SENSITIVE FILES
+PUBLISHING.md
+.pypirc
+*.token
+pypi-tokens.txt

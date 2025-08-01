@@ -1,5 +1,6 @@
 """
-COESI CLI - Command line interface for managing COESI Platform Docker deployments.
+COESI CLI - Command line interface for managing COESI Platform Docker
+deployments.
 """
 
 __version__ = "0.1.0"
