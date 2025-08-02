@@ -1,6 +1,6 @@
 # COESI CLI
 
-A command-line interface for managing COESI Platform Docker deployments.
+A command-line interface for managing COESI Platform.
 
 ## Installation
 
