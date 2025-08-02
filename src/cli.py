@@ -402,7 +402,8 @@ def clean_environment(profile: str, force: bool = False) -> None:
             if not force:
                 console.print(f"Cleaning {profile} environment...")
                 console.print(
-                    f"This will remove containers, networks, and volumes for {profile} profile."
+                    f"This will remove containers, networks, and volumes "
+                    f"for {profile} profile."
                 )
                 if not click.confirm("Are you sure?"):
                     console.print("Clean operation cancelled.")

@@ -45,7 +45,8 @@ def validate_ip(ip: str) -> bool:
 
     if not match:
         console.print(
-            f"[red]Error:[/red] Invalid IP address format '{ip}'. Expected format: xxx.xxx.xxx.xxx"
+            f"[red]Error:[/red] Invalid IP address format '{ip}'. "
+            f"Expected format: xxx.xxx.xxx.xxx"
         )
         return False
 
@@ -55,14 +56,16 @@ def validate_ip(ip: str) -> bool:
     for octet in octets:
         if octet > 255 or octet < 0:
             console.print(
-                f"[red]Error:[/red] Invalid IP address '{ip}'. Each octet must be between 0-255."
+                f"[red]Error:[/red] Invalid IP address '{ip}'. "
+                f"Each octet must be between 0-255."
             )
             return False
 
     # Check for reserved/invalid ranges
     if octets[0] == 0 or octets[0] == 127 or octets[0] > 223:
         console.print(
-            f"[red]Error:[/red] Invalid IP address '{ip}'. IP appears to be in a reserved range."
+            f"[red]Error:[/red] Invalid IP address '{ip}'. "
+            f"IP appears to be in a reserved range."
         )
         return False
 
@@ -146,7 +149,8 @@ def validate_env(env_file: str) -> bool:
         for var in required_vars:
             if f"{var}=" not in content:
                 console.print(
-                    f"[yellow]Warning:[/yellow] Required variable {var} not found in {env_file}"
+                    f"[yellow]Warning:[/yellow] Required variable {var} "
+                    f"not found in {env_file}"
                 )
     except Exception as e:
         console.print(f"[red]Error:[/red] Failed to read {env_file}: {e}")
